@@ -2,7 +2,7 @@
 ## Cryptocurrency price screener
 Developed by Edgar Villasenor
 
-Visualizer of cryptocurrency prices and trends. Data collected in real time from [CoinMarketCap](https://coinmarketcap.com/).
+Visualizer of cryptocurrency prices and trends. Data collected in real time.
 
 Inspired by [Coinbase Pro (originally known as GDAX)](https://pro.coinbase.com/), [CoinMarketCap](https://coinmarketcap.com/) and [Coinranking](https://coinranking.com/).
 
