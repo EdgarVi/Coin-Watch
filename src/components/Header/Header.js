@@ -1,13 +1,12 @@
 import React from 'react';
-
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 const Header = () => {
     return(
-        <div className="App">
-            <h1>Coin Watch js Halloween themed yuuuhhhh</h1> 
-            <div className="body"/>
-        </div>
+        <Navbar inverse fixedTop> 
+            <Navbar.Brand>Coin Watch yuuh</Navbar.Brand>
+        </Navbar>
     );
     }
 
-export default App;
+export default Header;
