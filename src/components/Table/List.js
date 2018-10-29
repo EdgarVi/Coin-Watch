@@ -1,14 +1,7 @@
 import React, {Component} from 'react';
 import Table from './Table';
 import {handleResponse} from '../../Helpers';
-import './List.css';
 
-const styles = {
-    center: {
-      marginLeft: "auto",
-      marginRight: "auto"
-    }
-  }
 
 class List extends Component {
     constructor(){
@@ -117,7 +110,7 @@ class List extends Component {
         }
         
         return(
-            <div className={styles.center}>
+            <div>
                 <Table 
                     base = {this.state.base} 
                     coins = {this.state.coins}
