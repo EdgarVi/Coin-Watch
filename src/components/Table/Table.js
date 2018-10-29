@@ -4,7 +4,7 @@ import './Table.css';
 const Table = (props) => {
     console.log("inside Table");
     
-    console.log(props);
+    //console.log( props.coins[0].price.toFixed(2));
     return (
         <div className="Table-container"> 
             <table className="Table">
@@ -22,7 +22,7 @@ const Table = (props) => {
                     <tr>
                         <th>{coin.rank}</th>  
                         <th>{coin.name} <img src = {coin.iconUrl} width = "23" height = "23"></img></th>
-                        <th>{props.base.sign}{coin.price}</th>
+                        <th>{props.base.sign}{Number(coin.price).toFixed(2)}</th>
                         <th>{props.base.sign}{coin.marketCap}</th>
                     <th>{coin.change}%</th>  
                 </tr> 
