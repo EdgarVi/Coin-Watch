@@ -34,7 +34,7 @@ class List extends Component {
 
         this.setState({loading: true});
 
-    
+        console.log(this.state.offset);
         const apiURL = 'https://api.coinranking.com/v1/public/coins?base=USD&offset=' + this.state.offset.toString() + '&limit=25';
 
         // Here we call Coinranking's API
@@ -48,15 +48,17 @@ class List extends Component {
                 console.log('API call made');
 
                 // Set state based off JSON response
-                this.setState({
-                    totalPages: totalPages,
-                    stats: dataObj.data.stats,
-                    base: dataObj.data.base,
-                    coins: dataObj.data.coins,
-                    total: dataObj.data.stats.total,
-                    loading: false
+                this.setState(() => {
+                    return {
+                        totalPages: totalPages,
+                        stats: dataObj.data.stats,
+                        base: dataObj.data.base,
+                        coins: dataObj.data.coins,
+                        total: dataObj.data.stats.total,
+                        loading: false
+                    }
                 });
-                
+                console.log(this.state);
             })
             .catch((error) => {
                 console.log(error);
@@ -76,27 +78,31 @@ class List extends Component {
             this.setState({
                 page: page,
                 offset: offset
-            })
-
-            this.fetchCurrencies();   
+            }, () => {
+                this.fetchCurrencies();
+            }
+        );     
         } 
     }
 
     handleRightArrowClick(){
         var page = this.state.page;
         var offset = this.state.offset;
+
         if(page < this.state.totalPages){
             page++;
             offset += 25;
+            
+            // by passing in a callback function, we mimic synchronous behavior to update state
             this.setState({
-                page: page,
-                offset: offset
-            })
-
-            this.fetchCurrencies();        
+                    page: page,
+                    offset: offset
+                }, () => {
+                    this.fetchCurrencies();
+                }
+            );     
         }
     }
-
 
     render(){
         const {loading} = this.state;

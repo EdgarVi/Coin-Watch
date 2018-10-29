@@ -2,9 +2,6 @@ import React from 'react';
 import './Table.css';
 
 const Table = (props) => {
-    console.log("inside Table");
-    
-    //console.log( props.coins[0].price.toFixed(2));
     return (
         <div className="Table-container"> 
             <table className="Table">
