@@ -1,20 +1,32 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Table.css';
 
 const Table = (props) => {
-    const {currencies} = props;
+    console.log("inside Table");
+    
+    console.log(props);
     return (
         <div className="Table-container"> 
             <table className="Table">
                 <thead className="Table-head">
                 <tr>
-                    <th>Cryptocurrency</th>
+                    <th>Rank</th>
+                    <th>Coin</th>
                     <th>Price</th>
                     <th>Market Cap</th>
-                    <th>24H Change</th>  
-                </tr>    
+                    <th>24 Hour Change</th>  
+                </tr>   
                 </thead>
                 <tbody className="Table-body">
+                {props.coins.map((coin) => (
+                    <tr>
+                        <th>{coin.rank}</th>  
+                        <th>{coin.name} <img src = {coin.iconUrl} width = "23" height = "23"></img></th>
+                        <th>{props.base.sign}{coin.price}</th>
+                        <th>{props.base.sign}{coin.marketCap}</th>
+                    <th>{coin.change}%</th>  
+                </tr> 
+                ))}
                 </tbody> 
             </table>
         </div>
