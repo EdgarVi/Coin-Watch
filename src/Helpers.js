@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * Fetch error helper
  * @param {object} response 
