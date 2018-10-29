@@ -10,6 +10,6 @@ const App = () => {
             <List/>
         </div>
     );
-    }
+}
 
 export default App;

@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import Table from './Table';
 import {handleResponse} from '../../Helpers';
+import './List.css';
 
+const styles = {
+    center: {
+      marginLeft: "auto",
+      marginRight: "auto"
+    }
+  }
 
 class List extends Component {
     constructor(){
@@ -34,7 +41,6 @@ class List extends Component {
 
         this.setState({loading: true});
 
-        console.log(this.state.offset);
         const apiURL = 'https://api.coinranking.com/v1/public/coins?base=USD&offset=' + this.state.offset.toString() + '&limit=25';
 
         // Here we call Coinranking's API
@@ -75,13 +81,13 @@ class List extends Component {
         if(page > 1){
             page--;
             offset -= 25;
+            // by passing in a callback function, we mimic synchronous behavior to update state
             this.setState({
                 page: page,
                 offset: offset
             }, () => {
                 this.fetchCurrencies();
-            }
-        );     
+            });     
         } 
     }
 
@@ -111,7 +117,7 @@ class List extends Component {
         }
         
         return(
-            <div>
+            <div className={styles.center}>
                 <Table 
                     base = {this.state.base} 
                     coins = {this.state.coins}
