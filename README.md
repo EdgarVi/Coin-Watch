@@ -17,3 +17,7 @@ Currently, the project is frontend only and has been intialized with [Create Rea
 
 ## Future Plans
 On future iterations of this app, I plan on adding user profiles. Users may be able to create a watchlist of crytpocurrencies they are interested in and "paper trade" cryptocurrencies to see how they would perform against the market.
+
+## References
+[Regular expression that adds commas to market cap from Stack OverFlow](https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript)
+Used in Table.js

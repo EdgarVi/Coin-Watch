@@ -13,7 +13,10 @@
 .Table-head tr th {
   padding: 10px 20px;
   color: #9cb3c9;
-  
   font-size: 14px;
   font-weight: 400;
 }
+tr:hover {
+  background-color: dimgray;
+}
+

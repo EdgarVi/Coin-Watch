@@ -7,6 +7,6 @@ const Header = () => {
             <Navbar.Brand>Coin Watch yuuh</Navbar.Brand>
         </Navbar>
     );
-    }
+}
 
 export default Header;
