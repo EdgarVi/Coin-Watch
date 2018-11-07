@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
     return(
         <Navbar fixedTop> 
-            <Navbar.Brand>Coin Watch yuuh</Navbar.Brand>
+            <Navbar.Brand>Coin Watch</Navbar.Brand>
             <img src = {penguin} alt = "merry christmas yo" width = "50" height = "50"></img>
         </Navbar>
     );

@@ -106,7 +106,7 @@ class List extends Component {
     render(){
         const {loading} = this.state;
         if(loading){
-            return <h1>loading coins yuhh</h1>
+            return <h1>loading coins</h1>
         }
         
         return(

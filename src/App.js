@@ -13,7 +13,7 @@ const App = () => {
                 <Header/>
                 <Switch>
                     <Route path = "/" component = {List} exact/>
-                    <Route path = "/coin/:name" component = {CoinDisplay} exact/>
+                    <Route path = "/coin/:id" component = {CoinDisplay} exact/>
                     <Route component = {NotFound}/>
                 </Switch>
             </div>
