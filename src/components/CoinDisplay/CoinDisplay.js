@@ -1,10 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const CoinDisplay = () => {
-    return(
-        <div>yuuhhh coin data yuhhh react router yuhh</div>
-    );
+
+
+class CoinDisplay extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            
+        }
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>coin data yuhh</h1>
+            </div>
+        );
+    }
 }
-
 
 export default CoinDisplay;

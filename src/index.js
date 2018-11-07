@@ -6,6 +6,6 @@ var destination = document.querySelector('#container');
 
 ReactDOM.render(
     <div>
-        <App/>
+        <App/>  
     </div>, destination
 );

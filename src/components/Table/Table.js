@@ -19,7 +19,7 @@ const Table = (props) => {
                 {props.coins.map((coin) => (
                     <tr
                         key = {coin.id}
-                        onClick={() => {console.log('yuuh')}}
+                        onClick={() => {console.log(coin.name)}}
                     >
                         <th>{coin.rank}</th>  
                         <th><img src = {coin.iconUrl} alt = "" width = "23" height = "23"></img> {coin.name}</th>
