@@ -1,6 +1,7 @@
 import React from 'react';
-import {history} from 'react-router';
+import {withRouter} from 'react-router-dom';
 import './Table.css';
+import PropTypes from 'prop-types';
 
 const Table = (props) => {
     return (
@@ -19,7 +20,7 @@ const Table = (props) => {
                 {props.coins.map((coin) => (
                     <tr
                         key = {coin.id}
-                        onClick={() => {console.log(coin.name)}}
+                        onClick={() => props.history.push(`/coin/${coin.symbol}`)}
                     >
                         <th>{coin.rank}</th>  
                         <th><img src = {coin.iconUrl} alt = "" width = "23" height = "23"></img> {coin.name}</th>
@@ -34,4 +35,9 @@ const Table = (props) => {
     );
 }
 
-export default Table;
+Table.PropTypes = {
+    coins: PropTypes.array.isRequired,
+    history: PropTypes.object.isRequired,
+};
+
+export default withRouter(Table);

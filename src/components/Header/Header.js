@@ -6,12 +6,9 @@ const Header = () => {
     return(
         <Navbar fixedTop> 
             <Navbar.Brand>Coin Watch yuuh</Navbar.Brand>
-            
             <img src = {penguin} alt = "merry christmas yo" width = "50" height = "50"></img>
         </Navbar>
     );
 }
 
 export default Header;
-
-//<Image src={penguin} circle responsive/>
