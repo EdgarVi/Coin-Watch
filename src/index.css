@@ -11,11 +11,6 @@ body{
     */
 }
 
-#container {
-    display: flex;
-    justify-content: flex;
-}
-
 .App{
     background-color: white;
 }

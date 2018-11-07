@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {handleResponse} from '../../Helpers';
-
+import './CoinDisplay.css';
 
 class CoinDisplay extends Component {
     constructor(){
@@ -59,13 +59,17 @@ class CoinDisplay extends Component {
     }
 
     render(){
-        const {loading} = this.state;
+        const {loading, error} = this.state;
+        
         if(loading){
             return <h1>loading new coin</h1>
         }
 
+        if(error){
+            return<h1>{error}</h1>
+        }
         return (
-            <div>
+            <div className="coinDisplay">
                 <h1>{this.state.coin.name}</h1>
             </div>
         );

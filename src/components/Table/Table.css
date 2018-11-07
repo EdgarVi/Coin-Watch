@@ -7,6 +7,7 @@
   border-collapse: collapse;
   border-spacing: 0;
   background-color: #F0EAD6;
+  
   /*
   Halloween theme
   background-color: #111111;
@@ -19,6 +20,10 @@
   color: black;
   font-size: 14px;
   font-weight: 400;
+}
+
+.Table-body tr th{
+  text-align: center;
 }
 tr:hover {
   background-color: #D6DCF0;

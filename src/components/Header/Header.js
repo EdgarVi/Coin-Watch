@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Image } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import penguin from '../../Assets/large_sledding-penguin22.png';
 import './Header.css';
 const Header = () => {
