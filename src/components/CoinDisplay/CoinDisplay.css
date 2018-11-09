@@ -5,37 +5,37 @@
     margin-top: 30px;
     margin-bottom: 40px;
     padding: 0 60px;
-    background-color: #D6DCF0;
+    background-color: #F0EAD6;
     
   }
   
-  .Detail-heading {
+  .Display-heading {
     font-size: 24px;
     font-weight: 300;
   }
   
-  .Detail-container {
+  .Display-container {
     width: 100%;
     max-width: 400px;
     margin-top: 30px;
     padding: 40px 40px 0;
     border-radius: 4px;
-    box-shadow: 0px 0px 40px 0px#1f364d;
+    box-shadow: 0px 0px 40px 0px #000000;
   }
   
-  .Detail-item {
+  .Display-item {
     margin-bottom: 50px;
   }
   
-  .Detail-value {
+  .Display-value {
     border-radius: 20px;
-    background-color: #1f364d;
+    background-color: #D6DCF0;
     font-size: 14px;
     padding: 8px 12px;
     margin-left: 10px;
   }
   
-  .Detail-title {
+  .Display-title {
     display: block;
     color: #9cb3c9;
     font-size: 12px;
@@ -43,8 +43,7 @@
     margin-bottom: 10px;
   }
   
-  .Detail-dollar {
-    color: #9cb3c9;
+  .Display-dollar {
     margin-right: 6px;
   }
   
