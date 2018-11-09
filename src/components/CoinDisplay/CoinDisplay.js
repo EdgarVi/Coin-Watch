@@ -13,7 +13,7 @@ class CoinDisplay extends Component {
             loading: true,
             base: null
         }
-
+        this.fetchCoin = this.fetchCoin.bind(this);
     }
 
 
@@ -72,7 +72,6 @@ class CoinDisplay extends Component {
         return (
             <div className="coinDisplay">
                 <h1>{this.state.coin.name}</h1>
-                <Chart></Chart>
             </div>
         );
     }
