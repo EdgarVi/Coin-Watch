@@ -27,5 +27,6 @@
 }
 tr:hover {
   background-color: #D6DCF0;
+  cursor: pointer;
 }
 

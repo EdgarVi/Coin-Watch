@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Table from './Table';
 import {handleResponse} from '../../Helpers';
-
+import './List.css';
 
 class List extends Component {
     constructor(){
@@ -115,14 +115,16 @@ class List extends Component {
                     base = {this.state.base} 
                     coins = {this.state.coins}
                 />
-                <button
-                    id='leftArrowButton'
-                    onClick={()=> this.handleLeftArrowClick()}
-                >&larr;</button>
-                <button
-                    id='rightArrowButton'
-                    onClick={()=> this.handleRightArrowClick()}
-                >&rarr;</button>
+                <div className="NavButtons">
+                    <button
+                        id='leftArrowButton'
+                        onClick={()=> this.handleLeftArrowClick()}
+                    >&larr;</button>
+                    <button
+                        id='rightArrowButton'
+                        onClick={()=> this.handleRightArrowClick()}
+                    >&rarr;</button>
+                </div>
             </div>
         );
     }
