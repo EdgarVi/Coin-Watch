@@ -1,5 +1,6 @@
 # Coin Watch
 ## Cryptocurrency price screener
+[The site is live at edgar-coin-watch.herokuapp.com](https://edgar-coin-watch.herokuapp.com/)
 Developed by Edgar Villasenor
 
 Visualizer of cryptocurrency prices and trends. Data is collected in real time.
