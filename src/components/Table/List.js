@@ -104,9 +104,22 @@ class List extends Component {
     }
 
     render(){
-        const {loading} = this.state;
+        const {loading} = this.state.loading;
         if(loading){
-            return <h1>loading coins</h1>
+            return(
+                <div>
+                    <div className="NavButtons">
+                        <button
+                            id='leftArrowButton'
+                            onClick={()=> this.handleLeftArrowClick()}
+                        >&larr;</button>
+                        <button
+                            id='rightArrowButton'
+                            onClick={()=> this.handleRightArrowClick()}
+                        >&rarr;</button>
+                    </div>
+                </div>
+            );
         }
         
         return(

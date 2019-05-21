@@ -1,5 +1,6 @@
 .Table-container {
   overflow-x: auto; /*Needed for table to be responsive*/
+
 }
 
 .Table {
@@ -21,8 +22,10 @@
   padding: 10px 20px;
   text-align: left;
 }
+
 tr:hover {
   cursor: pointer;
+  background-color:#d4ebf2;
 }
 
 .coin{

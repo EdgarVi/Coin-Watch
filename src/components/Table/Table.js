@@ -4,6 +4,7 @@ import './Table.css';
 import PropTypes from 'prop-types';
 
 const Table = (props) => {
+    
     return (
         <div className="Table-container"> 
             <table className="Table">
@@ -33,6 +34,7 @@ const Table = (props) => {
             </table>
         </div>
     );
+
 }
 
 Table.PropTypes = {
