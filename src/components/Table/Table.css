@@ -24,3 +24,10 @@ tr:hover {
   cursor: pointer;
 }
 
+.positive{
+  color:green;
+}
+
+.negative{
+  color:red;
+}

@@ -26,7 +26,7 @@ const Table = (props) => {
                         <th><img src = {coin.iconUrl} alt = "" width = "23" height = "23"></img> {coin.name}</th>
                         <th>{props.base.sign}{Number(coin.price).toFixed(2)}</th>
                         <th>{props.base.sign}{(coin.marketCap).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</th> 
-                        <th>{coin.change}%</th>
+                        <th className={(coin.change > 0) ? "positive" : "negative"}>{coin.change}%</th>
                 </tr> 
                 ))}
                 </tbody> 
