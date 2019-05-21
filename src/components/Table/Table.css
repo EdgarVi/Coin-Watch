@@ -6,12 +6,7 @@
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: #F0EAD6;
   
-  /*
-  Halloween theme
-  background-color: #111111;
-  */
 }
 
 .Table-head tr th {
@@ -26,7 +21,6 @@
   text-align: center;
 }
 tr:hover {
-  background-color: #D6DCF0;
   cursor: pointer;
 }
 

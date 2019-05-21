@@ -107,17 +107,3 @@ class CoinDisplay extends Component {
 }
 
 export default CoinDisplay;
-
-
-/*
-What would I need to display?
-Coin's:
-    header
-        name (link to website)
-        price
-        market cap
-        rank
-        change
-    graph
-        coin.history (need to make another api call)
-*/

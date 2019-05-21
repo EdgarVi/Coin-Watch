@@ -1,16 +1,9 @@
 body{
     padding: 50px;
-    
     font-family: 'Montserrat', sans-serif;
-    background-color: #F0EAD6;
     color: #1e1e1e;
-    /*
-    Halloween theme
-    background-color: #1e1e1e;
-    color: orange;
-    */
 }
 
 .App{
-    background-color: white;
+   
 }
