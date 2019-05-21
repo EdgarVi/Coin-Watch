@@ -10,7 +10,7 @@
 }
 
 .Table-head tr th {
-  text-align: center;
+  text-align: left;
   padding: 10px 20px;
   color: black;
   font-size: 14px;
@@ -18,12 +18,16 @@
 }
 
 .Table-body tr th{
-  text-align: center;
+  padding: 10px 20px;
+  text-align: left;
 }
 tr:hover {
   cursor: pointer;
 }
 
+.coin{
+  text-align: left;
+}
 .positive{
   color:green;
 }
