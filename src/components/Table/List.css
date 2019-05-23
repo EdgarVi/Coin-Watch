@@ -11,3 +11,8 @@ button{
     font-size: 13px;
     padding: 10px 20px;
 }
+
+#navText{
+    padding-left: 10px;
+    padding-right: 10px;
+}

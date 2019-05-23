@@ -133,6 +133,7 @@ class List extends Component {
                         id='leftArrowButton'
                         onClick={()=> this.handleLeftArrowClick()}
                     >&larr;</button>
+                    <p id="navText">page {this.state.page} of {this.state.totalPages}</p>
                     <button
                         id='rightArrowButton'
                         onClick={()=> this.handleRightArrowClick()}
